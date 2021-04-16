@@ -19,6 +19,7 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(thunk))
 );
 
+
 Promise.all([
   store.dispatch(fetchMoviesList()),
 ])
